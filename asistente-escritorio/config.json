@@ -1,0 +1,16 @@
+{
+  "nombre_usuario": "Jefe",
+  "ubicacion": "Medellín, Colombia",
+  "unidad_temperatura": "celsius",
+  "musica_local": "C:\\Users\\USER\\Music",
+  "spotify": {
+    "enabled": false,
+    "client_id": "",
+    "client_secret": "",
+    "device_name": ""
+  },
+  "noticias": {
+    "categorias": ["inteligencia artificial", "tecnología"],
+    "max_noticias": 3
+  }
+}

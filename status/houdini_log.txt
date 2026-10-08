@@ -1,0 +1,96 @@
+2026-08-26 15:27:30,337 [INFO] houdini.main: 🎩 Iniciando Houdini...
+2026-08-26 15:27:30,508 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+2026-08-26 15:27:30,508 [INFO] sqlalchemy.engine.Engine: select pg_catalog.version()
+2026-08-26 15:27:30,509 INFO sqlalchemy.engine.Engine [raw sql] {}
+2026-08-26 15:27:30,509 [INFO] sqlalchemy.engine.Engine: [raw sql] {}
+2026-08-26 15:27:30,511 INFO sqlalchemy.engine.Engine select current_schema()
+2026-08-26 15:27:30,511 [INFO] sqlalchemy.engine.Engine: select current_schema()
+2026-08-26 15:27:30,511 INFO sqlalchemy.engine.Engine [raw sql] {}
+2026-08-26 15:27:30,511 [INFO] sqlalchemy.engine.Engine: [raw sql] {}
+2026-08-26 15:27:30,516 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+2026-08-26 15:27:30,516 [INFO] sqlalchemy.engine.Engine: show standard_conforming_strings
+2026-08-26 15:27:30,516 INFO sqlalchemy.engine.Engine [raw sql] {}
+2026-08-26 15:27:30,516 [INFO] sqlalchemy.engine.Engine: [raw sql] {}
+2026-08-26 15:27:30,521 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-08-26 15:27:30,521 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2026-08-26 15:27:30,522 INFO sqlalchemy.engine.Engine CREATE EXTENSION IF NOT EXISTS vector
+2026-08-26 15:27:30,522 [INFO] sqlalchemy.engine.Engine: CREATE EXTENSION IF NOT EXISTS vector
+2026-08-26 15:27:30,522 INFO sqlalchemy.engine.Engine [generated in 0.00018s] {}
+2026-08-26 15:27:30,522 [INFO] sqlalchemy.engine.Engine: [generated in 0.00018s] {}
+2026-08-26 15:27:30,526 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,526 [INFO] sqlalchemy.engine.Engine: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,526 INFO sqlalchemy.engine.Engine [generated in 0.00024s] {'table_name': 'conversations', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,526 [INFO] sqlalchemy.engine.Engine: [generated in 0.00024s] {'table_name': 'conversations', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,528 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,528 [INFO] sqlalchemy.engine.Engine: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,528 INFO sqlalchemy.engine.Engine [cached since 0.002338s ago] {'table_name': 'semantic_facts', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,528 [INFO] sqlalchemy.engine.Engine: [cached since 0.002338s ago] {'table_name': 'semantic_facts', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,530 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,530 [INFO] sqlalchemy.engine.Engine: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,530 INFO sqlalchemy.engine.Engine [cached since 0.003509s ago] {'table_name': 'procedures', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,530 [INFO] sqlalchemy.engine.Engine: [cached since 0.003509s ago] {'table_name': 'procedures', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,532 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,532 [INFO] sqlalchemy.engine.Engine: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,532 INFO sqlalchemy.engine.Engine [cached since 0.005855s ago] {'table_name': 'task_states', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,532 [INFO] sqlalchemy.engine.Engine: [cached since 0.005855s ago] {'table_name': 'task_states', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,535 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,535 [INFO] sqlalchemy.engine.Engine: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,535 INFO sqlalchemy.engine.Engine [cached since 0.008573s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,535 [INFO] sqlalchemy.engine.Engine: [cached since 0.008573s ago] {'table_name': 'documents', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,536 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,536 [INFO] sqlalchemy.engine.Engine: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s::VARCHAR, %(param_2)s::VARCHAR, %(param_3)s::VARCHAR, %(param_4)s::VARCHAR, %(param_5)s::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s::VARCHAR
+2026-08-26 15:27:30,537 INFO sqlalchemy.engine.Engine [cached since 0.01004s ago] {'table_name': 'reminders', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,537 [INFO] sqlalchemy.engine.Engine: [cached since 0.01004s ago] {'table_name': 'reminders', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-08-26 15:27:30,538 [INFO] houdini.core.memory: Base de datos inicializada (tablas + pgvector)
+2026-08-26 15:27:30,538 INFO sqlalchemy.engine.Engine COMMIT
+2026-08-26 15:27:30,538 [INFO] sqlalchemy.engine.Engine: COMMIT
+2026-08-26 15:27:30,539 [INFO] houdini.main: ✅ Memoria inicializada (PostgreSQL + pgvector)
+2026-08-26 15:27:30,540 [INFO] houdini.core.dispatcher: Agente registrado: tts
+2026-08-26 15:27:30,899 [INFO] houdini.services.oauth: Token de Google refrescado
+2026-08-26 15:27:30,908 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-08-26 15:27:30,914 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-08-26 15:27:30,919 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-08-26 15:27:30,924 [INFO] googleapiclient.discovery_cache: file_cache is only supported with oauth2client<4.0.0
+2026-08-26 15:27:30,926 [INFO] houdini.main: ✅ Google services autenticados (Gmail, Calendar, Sheets, Drive)
+2026-08-26 15:27:30,926 [INFO] houdini.core.dispatcher: Agente registrado: gmail
+2026-08-26 15:27:30,926 [INFO] houdini.core.dispatcher: Agente registrado: calendar
+2026-08-26 15:27:30,926 [INFO] houdini.core.dispatcher: Agente registrado: sheets
+2026-08-26 15:27:30,926 [INFO] houdini.core.dispatcher: Agente registrado: drive
+2026-08-26 15:27:30,926 [INFO] houdini.core.dispatcher: Agente registrado: whatsapp
+2026-08-26 15:27:30,926 [INFO] houdini.core.dispatcher: Agente registrado: design
+2026-08-26 15:27:30,926 [INFO] houdini.main: ✅ Design Agent (HTML Bootstrap) registrado
+2026-08-26 15:27:30,926 [INFO] houdini.core.dispatcher: Agente registrado: dashboard
+2026-08-26 15:27:30,926 [INFO] houdini.main: ✅ Dashboard Agent (Membresias VIP) registrado
+2026-08-26 15:27:31,042 [INFO] houdini.core.orchestrator: ✅ Anthropic configurado: claude-sonnet-4-5-20250929
+2026-08-26 15:27:31,042 [INFO] houdini.main: ✅ Orquestador inicializado
+2026-08-26 15:27:31,073 [INFO] houdini.core.dispatcher: Agente registrado: telegram
+2026-08-26 15:27:31,074 [INFO] houdini.main: ✅ Telegram bot inicializado
+2026-08-26 15:27:31,074 [INFO] houdini.main: 🎩 Houdini listo. Esperando mensajes en Telegram...
+2026-08-26 15:27:31,135 [INFO] apscheduler.scheduler: Scheduler started
+2026-08-26 15:27:31,135 [INFO] houdini.agents.telegram: Telegram scheduler iniciado
+2026-08-26 15:27:31,135 [INFO] aiogram.dispatcher: Start polling
+2026-08-26 15:27:31,628 [INFO] aiogram.dispatcher: Run polling for bot @Houdinipro_bot id=8714100955 - 'Houdiniprobot'

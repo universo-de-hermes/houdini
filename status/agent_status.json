@@ -1,0 +1,251 @@
+{
+  "houdini": {
+    "name": "HOUDINI",
+    "doing": "Caminando hacia gmail",
+    "task": "DAME SOLO ESTO: 1) Cuantos correos no leídos tengo en Gmail y el título del más ",
+    "status": "active",
+    "color": "#6C3BD2",
+    "team": "GERENCIA",
+    "walk_x": -13,
+    "walk_z": -6.6,
+    "updated_at": "2026-09-07T19:15:04.069936"
+  },
+  "gmail": {
+    "name": "GMAIL AGENT",
+    "doing": "Ejecutando search_emails",
+    "task": "{'query': 'is:unread', 'max_results': 20}",
+    "status": "active",
+    "color": "#4285F4",
+    "team": "COMUNICACIÓN",
+    "updated_at": "2026-09-07T19:15:04.035589",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "telegram": {
+    "name": "TELEGRAM AGENT",
+    "doing": "En espera",
+    "task": "Canal activo, sin novedades",
+    "status": "idle",
+    "color": "#45C4F5",
+    "team": "COMUNICACIÓN",
+    "updated_at": null,
+    "walk_x": null,
+    "walk_z": null
+  },
+  "tts": {
+    "name": "TTS AGENT",
+    "doing": "En espera",
+    "task": "Sintetizador en reposo",
+    "status": "idle",
+    "color": "#E6E6FA",
+    "team": "COMUNICACIÓN",
+    "updated_at": null,
+    "walk_x": null,
+    "walk_z": null
+  },
+  "whatsapp2": {
+    "name": "WHATSAPP AGENT",
+    "doing": "No operativo",
+    "task": "Fase 2 — pendiente de implementación",
+    "status": "idle",
+    "color": "#7A8090",
+    "team": "COMUNICACIÓN",
+    "updated_at": null,
+    "walk_x": null,
+    "walk_z": null
+  },
+  "sheets": {
+    "name": "SHEETS AGENT",
+    "doing": "Ejecutando read_range",
+    "task": "{'spreadsheet_id': '1-LrFtiMDIuMqXF7hTSnOEO_k-XGCitdF', 'range': 'A1:Z50'}",
+    "status": "idle",
+    "color": "#B0E0E6",
+    "team": "DATOS",
+    "updated_at": "2026-09-06T18:10:38.267213",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "drive": {
+    "name": "DRIVE AGENT",
+    "doing": "Asignado por jefe: el archivo de las membresías cómo vamos",
+    "task": "el archivo de las membresías cómo vamos",
+    "status": "idle",
+    "color": "#FFD400",
+    "team": "DATOS",
+    "updated_at": "2026-09-06T18:10:27",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "calendar": {
+    "name": "CALENDAR AGENT",
+    "doing": "Ejecutando create_event",
+    "task": "{'title': 'Reunión con Sol', 'start': '2026-09-06T17:00:00', 'end': '2026-09-06T",
+    "status": "idle",
+    "color": "#2ECC71",
+    "team": "DATOS",
+    "updated_at": "2026-09-06T17:20:47.425967",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "dashboard": {
+    "name": "DASHBOARD AGENT",
+    "doing": "Ejecutando send_dashboard",
+    "task": "{'recipient_email': 'cristianandresgomezvega@gmail.com'}",
+    "status": "idle",
+    "color": "#FF8C1A",
+    "team": "ESTUDIO",
+    "updated_at": "2026-09-06T18:12:22.377206",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "design": {
+    "name": "DESIGN AGENT",
+    "doing": "Asignado por jefe: Recuérdame que Cuando le pido page la mú",
+    "task": "Recuérdame que Cuando le pido page la música se va es para Spotify",
+    "status": "idle",
+    "color": "#FF6FB5",
+    "team": "ESTUDIO",
+    "updated_at": "2026-09-03T19:35:57",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "recep": {
+    "name": "COMMUNITY MANAGER CJ COL",
+    "doing": "Cliente atendido",
+    "task": "Gestionando redes y clientes",
+    "status": "idle",
+    "color": "#B8860B",
+    "team": "LOBBY",
+    "updated_at": "2026-09-06T17:51:56.453173",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "recep-cal": {
+    "name": "CALENDAR AGENT",
+    "doing": "En espera",
+    "task": "Sin solicitudes de agenda",
+    "status": "idle",
+    "color": "#2ECC71",
+    "team": "LOBBY",
+    "updated_at": null,
+    "walk_x": null,
+    "walk_z": null
+  },
+  "wa-sender": {
+    "name": "WHATSAPP SENDER",
+    "doing": "Preparando envío",
+    "task": "Bandeja de salida vacía",
+    "status": "idle",
+    "color": "#128C7E",
+    "team": "LOBBY",
+    "updated_at": "2026-09-06T17:51:54.058133",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "handoff": {
+    "name": "HUMAN HANDOFF",
+    "doing": "En espera",
+    "task": "Sin casos para escalar",
+    "status": "idle",
+    "color": "#C2C8D6",
+    "team": "LOBBY",
+    "updated_at": null,
+    "walk_x": null,
+    "walk_z": null
+  },
+  "flow": {
+    "name": "FLOW",
+    "color": "#888",
+    "team": "?",
+    "steps": [
+      {
+        "agent": "gmail",
+        "home_x": -12.485653288816824,
+        "home_z": -5.190940930728932
+      }
+    ],
+    "active": true,
+    "updated_at": "2026-09-06T18:12:19",
+    "status": "idle",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "spotify": {
+    "doing": "Ejecutando spotify_play",
+    "task": "{'query': 'música instrumental lluvia'}",
+    "status": "idle",
+    "updated_at": "2026-09-05T10:12:03.180076",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "cm-cjcol": {
+    "name": "COMMUNITY MANAGER CJ",
+    "doing": "En espera",
+    "task": "Gestionando comunidad y redes",
+    "status": "idle",
+    "color": "#FF6B35",
+    "team": "CM-LOBBY",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "cm-content": {
+    "name": "CONTENT CREATOR",
+    "doing": "En espera",
+    "task": "Crear contenido para redes",
+    "status": "idle",
+    "color": "#E8A838",
+    "team": "CM-LOBBY",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "cm-analytics": {
+    "name": "ANALYTICS AGENT",
+    "doing": "En espera",
+    "task": "Analizar engagement",
+    "status": "idle",
+    "color": "#AB47BC",
+    "team": "CM-LOBBY",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "cm-ig": {
+    "name": "IG Comentarios",
+    "doing": "En espera",
+    "task": "Monitorear IG",
+    "status": "idle",
+    "color": "#E1306C",
+    "team": "CM-LOBBY",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "cm-fb": {
+    "name": "FB Comentarios",
+    "doing": "En espera",
+    "task": "Monitorear FB",
+    "status": "idle",
+    "color": "#1877F2",
+    "team": "CM-LOBBY",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "cm-shopify": {
+    "name": "SHOPIFY AGENT",
+    "doing": "En espera",
+    "task": "Gestionar tienda Shopify",
+    "status": "idle",
+    "color": "#96BF48",
+    "team": "CM-LOBBY",
+    "walk_x": null,
+    "walk_z": null
+  },
+  "cm-metaads": {
+    "name": "METAADS AGENT",
+    "doing": "En espera",
+    "task": "Administrar Meta Ads",
+    "status": "idle",
+    "color": "#0064E0",
+    "team": "CM-LOBBY",
+    "walk_x": null,
+    "walk_z": null
+  }
+}

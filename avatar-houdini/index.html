@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Houdini — Avatar Holográfico</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #050510; 
+            overflow: hidden; 
+            font-family: 'Segoe UI', sans-serif;
+            width: 100vw; height: 100vh;
+        }
+        #scene-container {
+            width: 100vw; height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+        }
+        #status {
+            position: fixed; bottom: 20px; left: 20px;
+            color: #00d4ff; font-size: 12px; opacity: 0.5;
+            font-family: monospace;
+        }
+        #loading {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            color: #00d4ff; font-size: 18px; font-family: monospace;
+            text-shadow: 0 0 20px rgba(0,212,255,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">INICIALIZANDO AVATAR...</div>
+    <div id="scene-container"></div>
+    <div id="status">HOUDINI v1.0</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/face.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

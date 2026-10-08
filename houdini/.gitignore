@@ -1,0 +1,14 @@
+# Houdini
+.env
+config/google_token.json
+config/google_client_secret.json
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+houdini_pgdata/
+*.mp3
+*.log

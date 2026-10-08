@@ -1,0 +1,30 @@
+# =============================================
+# Houdini - Docker Compose
+# Infraestructura: PostgreSQL + pgvector
+# (Houdini corre en local ahora, migración a VPS después)
+# =============================================
+
+services:
+  # ─────────────────────────────────────────────
+  # PostgreSQL + pgvector
+  # ─────────────────────────────────────────────
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: houdini_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: houdini
+      POSTGRES_PASSWORD: houdini_secret
+      POSTGRES_DB: houdini_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - houdini_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U houdini -d houdini_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  houdini_pgdata:

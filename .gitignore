@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+*.bak
+node_modules/
+dist/
+venv/
+.vscode/
+.idea/
+*.log
